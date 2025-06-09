@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/4666e0d8-12b4-452c-9a94-dfb288aab03a/green-candle.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250606%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250606T211436Z&X-Amz-Expires=86400&X-Amz-Signature=0fc200f546e69f2485f7d029d683cb39c3f1eda2a7cdfa459914bd4f60693043&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22green-candle.png%22&response-content-type=image%2Fpng&x-id=GetObject

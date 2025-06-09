@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/c69dc016-b42a-4b47-963a-d78c1d9bd8db/red-candle.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250606%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250606T211436Z&X-Amz-Expires=86400&X-Amz-Signature=96fa47885e8d1da21d4738ddbfaea43d7a31afcf478c9c85220c74ceee11aae7&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22red-candle.png%22&response-content-type=image%2Fpng&x-id=GetObject
