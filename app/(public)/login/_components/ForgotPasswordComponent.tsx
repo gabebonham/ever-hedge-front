@@ -30,10 +30,11 @@ export default function ForgotPasswordComponent({ props }: { props: Props }) {
   } = props
   return (
     <div className="flex flex-col items-center gap-y-4 w-full ">
+      <h1 className="text-white text-4xl pb-8 text-center">RECUPERAR SENHA</h1>
       <Input
         placeholder="Email"
         type="text"
-        className="text-sm rounded-[4px] border-silver max-w-96 bg-white/20 text-white"
+        className="text-sm rounded-md border-silver max-w-96 bg-black/70 text-white"
         value={email}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
           setEmail(e.target.value)
@@ -45,14 +46,14 @@ export default function ForgotPasswordComponent({ props }: { props: Props }) {
             placeholder="Códgio"
             value={code}
             type="text"
-            className="text-sm rounded-[4px] border-silver max-w-96 bg-white/20 text-white"
+            className="text-sm rounded-md border-silver max-w-96 bg-black/70 text-white"
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               setCode(e.target.value)
             }
           />
           <Button
             onClick={() => verifyCodeHanlder()}
-            className="cursor-pointer bg-gradient-to-br from-coral to-peach hover:to-mainred transition-all duration-200 w-full max-w-96"
+            className="cursor-pointer bg-sunset text-black hover:bg-sunset/70 transition-all duration-200 w-full max-w-96"
           >
             Confirmar código
           </Button>
@@ -66,7 +67,7 @@ export default function ForgotPasswordComponent({ props }: { props: Props }) {
           sendCodeHanlder()
           setIsSent(true)
         }}
-        className="cursor-pointer bg-gradient-to-br from-coral to-peach hover:to-mainred transition-all duration-200 w-full max-w-96"
+        className="cursor-pointer text-black bg-sunset hover:bg-sunset/70 transition-all duration-200 w-full max-w-96"
       >
         Enviar código
       </Button>
@@ -79,9 +80,9 @@ export default function ForgotPasswordComponent({ props }: { props: Props }) {
             setSection('login')
             setError('')
           }}
-          className="text-coral font-bold cursor-pointer"
+          className="text-sunset font-bold cursor-pointer"
         >
-          Clique aqui para se logar
+          Clique aqui para logar
         </a>
       </p>
       <p className="text-sm text-gray-500">
@@ -91,7 +92,7 @@ export default function ForgotPasswordComponent({ props }: { props: Props }) {
             setSection('signup')
             setError('')
           }}
-          className="text-coral font-bold cursor-pointer"
+          className="text-sunset font-bold cursor-pointer"
         >
           Clique aqui para se cadastrar
         </a>

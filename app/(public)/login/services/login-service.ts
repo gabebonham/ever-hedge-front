@@ -8,5 +8,5 @@ export async function login(username: string, password: string) {
   // faz redirect
   if (username == 'user' && password == '123') {
     permanentRedirect('/dashboard')
-  } else return 'Erro erroso'
+  } else return 'Erro ao fazer login'
 }

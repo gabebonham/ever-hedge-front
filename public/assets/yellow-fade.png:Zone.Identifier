@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/2eb40557-b47b-4093-95bb-746670563b7d/yellow-fade.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250610%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250610T193236Z&X-Amz-Expires=86400&X-Amz-Signature=3847c3120a1bdd42b4476c356d6ea782cfabad4a655b31307bb3585e3dc40906&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22yellow-fade.png%22&response-content-type=image%2Fpng&x-id=GetObject

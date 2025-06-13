@@ -6,6 +6,7 @@ import logo from '@/public/logos/ever-hedge-main-logo.png'
 import greenCandle from '@/public/assets/green-candle.png'
 import redCandle from '@/public/assets/red-candle.png'
 import bubble from '@/public/assets/bubble.png'
+import yellowBg from '@/public/assets/bg-graph-yellow.jpg'
 import { Button } from '@/components/ui/button'
 import { login } from './services/login-service'
 import { useState } from 'react'
@@ -61,12 +62,14 @@ export default function LoginPage() {
     } else setError('Código incorreto')
   }
   return (
-    <div className="w-full h-screen  ">
-      <div className="flex h-full bg-dark">
-        <div className="bg-gradient-to-r from-dark to-dark/50 flex justify-center h-full   items-center w-full">
+    <div className="w-full h-screen bg-maindark ">
+      <div className="flex items-center h-screen bg-[url(/assets/bg-graph.jpg)] bg-cover  ">
+        <div className="flex h-full absolute w-full  blur-lg opacity-90 bg-black/90"></div>
+        <div className="bg-sunset/15 flex justify-center h-full items-center w-full  ">
           <div className="w-full max-w-[450px] flex flex-col justify-center h-72 mx-4  py-4 rounded-2xl ">
-            <div className="flex flex-col gap-y-8 w-full px-12 items-center ">
-              <Image alt="ever-hedge-logo" src={logo} className="w-64" />
+            <div className="flex flex-col gap-y-8 w-full px-12 items-center z-10">
+              {/* <Image alt="ever-hedge-logo" src={logo} className="w-64" /> */}
+
               {section == 'login' ? (
                 <LoginComponent
                   props={{
@@ -112,8 +115,13 @@ export default function LoginPage() {
               )}
             </div>
           </div>
+          {/* <Image
+            alt="graph"
+            src={yellowBg}
+            className="absolute opacity-80 mask-b-from-50%  "
+          /> */}
         </div>
-        <div className="max-[800px]:hidden w-full bg-gradient-to-br from-coral/20 to-mainred/40 ">
+        <div className="max-[800px]:hidden w-full h-screen bg-gradient-to-br from-coral/20 to-mainred/40 ">
           <div className="w-full flex h-full flex-col">
             <div className="w-full pt-23 pr-24 flex justify-end">
               <Image
@@ -143,7 +151,7 @@ export default function LoginPage() {
             </div>
             <div className="text-center text-5xl text-white px-8 absolute pt-64">
               Suas maiores{' '}
-              <span className="text-maingreen font-bold">oportunidades</span>
+              <span className="text-sunset font-bold">oportunidades</span>
             </div>
           </div>
         </div>
