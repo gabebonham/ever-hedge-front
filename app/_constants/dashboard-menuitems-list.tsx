@@ -1,5 +1,5 @@
 import { Trash } from 'lucide-react'
-import Section1Component from '../(private)/dashboard/area-de-assinante/_components/Section1'
+import Section1Component from '../(private)/dashboard/radar-terfs/_components/Section'
 import Section2Component from '../(private)/dashboard/radar-calendarios-thl/section2mock/Section2'
 
 export const dashboardMenuItemsList = [

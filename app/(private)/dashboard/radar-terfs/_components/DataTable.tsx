@@ -131,7 +131,7 @@ export const columns: ColumnDef<Payment>[] = [
   },
 ]
 
-export function DataTableSection1Mock({ data }: { data: any[] }) {
+export function RadarTerfsDataTable({ data }: { data: any[] }) {
   const [sorting, setSorting] = React.useState<SortingState>([])
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     [],
@@ -161,18 +161,18 @@ export function DataTableSection1Mock({ data }: { data: any[] }) {
   })
 
   return (
-    <div className="w-full">
-      <div className="flex items-center py-4">
+    <div className="w-full text-maingray ">
+      <div className="flex items-center py-4 max-[500px]:justify-center ">
         <Input
           placeholder="Filtrar código da Ação..."
           value={filtered}
           onChange={(event) => setFiltered(event.target.value)}
-          className="max-w-sm"
+          className="max-w-sm max-[500px]:text-xs max-[500px]:w-5/6 "
         />
       </div>
-      <div className="rounded-md border overflow-auto h-72">
-        <Table>
-          <TableBody className="space-y-4">
+      <div className="rounded-md border overflow-auto h-72 max-[500px]:border-0">
+        <Table className="">
+          <TableBody className="space-y-4 ">
             {data?.length ? (
               (filtered
                 ? data.filter((d: any) =>
@@ -182,7 +182,10 @@ export function DataTableSection1Mock({ data }: { data: any[] }) {
                   )
                 : data
               ).map((row, index) => (
-                <TableRow key={row.id} className="border-b-black">
+                <TableRow
+                  key={row.id}
+                  className="border-b-transparent border-b-2 hover:bg-transparent"
+                >
                   <TableCell key={index}>
                     <RowComponentTerfs row={row} />
                   </TableCell>
@@ -201,27 +204,9 @@ export function DataTableSection1Mock({ data }: { data: any[] }) {
           </TableBody>
         </Table>
       </div>
-      <div className="flex items-center justify-end space-x-2 py-4">
-        <div className="text-muted-foreground flex-1 text-sm">
+      <div className="flex items-center justify-end space-x-2 py-4 max-[500px]:hidden">
+        <div className="text-muted-foreground flex-1 text-sm ">
           {data.length} Registros
-        </div>
-        <div className="space-x-2">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.previousPage()}
-            disabled={!table.getCanPreviousPage()}
-          >
-            Previous
-          </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.nextPage()}
-            disabled={!table.getCanNextPage()}
-          >
-            Next
-          </Button>
         </div>
       </div>
     </div>

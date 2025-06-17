@@ -2,7 +2,26 @@
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #555 var(--color-maindark);
+}
 
+/* WebKit */
+::-webkit-scrollbar {
+  border-radius: 100%;
+  width: 8px; /* Adjust width */
+}
+::-webkit-scrollbar-track {
+  background: #555; /* Adjust track color */
+}
+::-webkit-scrollbar-thumb {
+  background: #555; /* Adjust thumb color */
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
